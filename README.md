@@ -26,16 +26,18 @@ Depiction of the modified model´s architecture can be found in folder called **
 
 | File | Description |
 | --- | --- |
+| data | Folder containing the data for the project |
+| data/Face_emotions | Data folder with training and test sets |
 | output | Folder containing files produced by the script |
-| output/Impressionist_classifier_report.csv | Classification metrics of the model |
-| output/LeNet_CNN_model´s_performance.png | Model´s performance graph |
-| output/Model´s_architecture.png | Depiction of CNN model´s architecture used |
+| output/Emotions_classifier_report.csv | Classification metrics of the model |
+| output/Emotions_classifier_performance.png | Model´s performance graph |
+| output/VGG-Face_CNN´s_architecture.png | Depiction of CNN model´s architecture used |
 | src | Folder containing the script |
-| src/cnn_artists.py | The script |
+| src/emotion_class.py | The script |
 | README.md | Description of the assignment and the instructions |
-| cnn_venv.sh | bash file for creating a virtual environmment  |
-| kill_cnn.sh | bash file for removing a virtual environment |
-| requirements.txt | list of python packages required to run the script |
+| emotion_venv.sh | bash file for creating a virtual environmment  |
+| kill_emotion.sh | bash file for removing a virtual environment |
+| requirements.txt| list of python packages required to run the script |
 
 
 
