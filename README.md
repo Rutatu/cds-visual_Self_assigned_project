@@ -83,7 +83,7 @@ Set-up:
 #1 Open terminal on worker02 or locally
 #2 Navigate to the environment where you want to clone this repository
 #3 Clone the repository
-$ git clone  
+$ git clone https://github.com/Rutatu/cds-visual_Self_assigned_project.git  
 
 #4 Navigate to the newly cloned repo
 $ cd cds-visual_Self_assigned_project
