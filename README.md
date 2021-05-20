@@ -26,8 +26,6 @@ Depiction of the modified model´s architecture can be found in folder called **
 
 | File | Description |
 | --- | --- |
-| data | Folder containing the data for the project |
-| data/Face_emotions | Data folder with training and test sets |
 | output | Folder containing files produced by the script |
 | output/Emotions_classifier_report.csv | Classification metrics of the model |
 | output/Emotions_classifier_performance.png | Model´s performance graph |
