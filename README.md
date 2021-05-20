@@ -12,7 +12,7 @@
 ## About the script
 
 
-This assignment is a self-assigned project. This project focuses on an emotion recognition task using transfer learning from a pre-trained VGG-Face deep CNN. The task is to classify images of facial expressions into 7 basic emotions: anger, disgust, fear, happiness, sadness, surprise, and neutral. The script outputs the classification report and performance graph. After training and evaluating the CNN, the script, using grid search method, returns the best parameters based on highest achieved accuracy.
+This assignment is a self-assigned project. This project focuses on an emotion recognition task using transfer learning from a pre-trained VGG-Face deep CNN. The task is to classify images of facial expressions into 7 basic emotions: anger, disgust, fear, happiness, sadness, surprise, and neutral. The script outputs the classification report and a performance graph. After training and evaluating the CNN, the script, using grid search method, returns the best parameters based on highest achieved accuracy.
 
 
 ## Methods
@@ -55,7 +55,7 @@ The code should work on any other similar image data structured this way, howeve
 
 __Data preprocessing__
 
-Data did not require any extra preprocessing other than converting pixels into a numpy array.
+The only pre-processing of the data was the subtraction of the mean RGB value, computed on the training set, from each pixel. The same pre-processing step was applied to the ImageNet images for the VGG16 model, on which VGG-Face CNN is based on. This was performed using Keras function ```preprocess_input()```.
 
 
 
@@ -72,7 +72,7 @@ __Code parameters__
 | val_data (vald) | Directory of validation data |
 | optimizer (optim) | A method to update the weight parameters to minimize the loss function. Choose betweeen SGD and Adam |
 | learning_rate (lr) |The amount that the weights are updated during training. Default = 0.001 |
-| epochs (ep) |Defines how many times the learning algorithm will work through the entire training dataset. Default = 30 |
+| epochs (ep) |Defines how many times the learning algorithm will work through the entire training dataset. Default = 50 |
 
 
 __Steps__
@@ -120,7 +120,7 @@ I hope it worked!
 
 ## Results
 
-Facial expressions are very difficult to classify for the computer due to complicated muscle movements, therefore, deep learning techniques need to be employed in order to achieve at least mediocre results. This project showed how transfer learning can be used for an emotion classification problem based on extracted facial expression features. The pre-trained VGG-Face deep CNN achieved a weighted average accuracy of % for correctly classifying faces according to their emotional expression. Such results are not satisfactory, thus, having more data or/and fine-tuning hyperparameters of the model might increase the accuracy.
+Facial expressions are very difficult to classify for the computer due to complicated muscle movements, therefore, deep learning techniques need to be employed in order to achieve at least mediocre results. This project showed how transfer learning can be used for an emotion classification problem based on extracted facial expression features. The pre-trained VGG-Face deep CNN (optimizer = Adam, learning rate = 0.001)  achieved a weighted average accuracy of 41% for correctly classifying faces according to their emotional expression. Such results are not satisfactory, thus, having more data or/and fine-tuning hyperparameters of the model might increase the accuracy.
 
 
 
